@@ -10,7 +10,7 @@
 #import <AddressBook/AddressBook.h>
 
 #pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wno-deprecated-declarations"
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 @interface APAddressBookRefWrapper : NSObject
 
 @property (nonatomic, readonly) ABAddressBookRef ref;

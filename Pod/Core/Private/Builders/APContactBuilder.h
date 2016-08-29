@@ -15,7 +15,7 @@
 @interface APContactBuilder : NSObject
 
 #pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wno-deprecated-declarations"
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (APContact *)contactWithRecordRef:(ABRecordRef)recordRef fieldMask:(APContactField)fieldMask;
 #pragma clang diagnostic pop
 @end
