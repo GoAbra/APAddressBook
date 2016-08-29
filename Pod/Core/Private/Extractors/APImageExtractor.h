@@ -10,9 +10,14 @@
 #import <UIKit/UIKit.h>
 #import <AddressBook/AddressBook.h>
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wno-deprecated-declarations"
+
 @interface APImageExtractor : NSObject
 
 + (UIImage *)thumbnailWithRecordRef:(ABRecordRef)recordRef;
 + (UIImage *)photoWithRecordRef:(ABRecordRef)recordRef;
 
 @end
+
+#pragma clang diagnostic pop

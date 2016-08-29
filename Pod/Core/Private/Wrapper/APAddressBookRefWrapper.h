@@ -9,9 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <AddressBook/AddressBook.h>
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wno-deprecated-declarations"
 @interface APAddressBookRefWrapper : NSObject
 
 @property (nonatomic, readonly) ABAddressBookRef ref;
 @property (nonatomic, readonly) NSError *error;
 
 @end
+#pragma clang diagnostic pop
